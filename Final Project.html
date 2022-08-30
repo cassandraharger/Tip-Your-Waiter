@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adulting101</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+      }
+
+      h2 {
+        text-align: center;
+        color: white;
+        background-color: #00b7c2;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+        font-family: sans-serif;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #00b7c2;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .learn-more {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .link {
+        color: #fdcb9e;
+        font-family: sans-serif;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: #1b262c;">
+    <div class="container">
+      <h1>
+        Tip Your Waiter
+      </h1>
+      <h2>
+        Why your tip matters 
+      </h2>
+      <img
+        src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1120321598%2F960x0.jpg%3Ffit%3Dscale"
+        alt="Greek Yogurt"
+      />
+      <p>
+        While tipping is not usually mandatory, it is the prevailing practice to leave a tip after meal at pretty much every
+        restaurant in the United States. For the vast majority of servers and bartenders in America, tips make up a substantial
+        part of their income.
+      </p>
+      <a
+        href="https://www.pbs.org/newshour/economy/why-do-we-tip#:~:text=Some%20people%20tip%20to%20help,of%20a%20sense%20of%20duty."
+        target="_blank"
+        class="link"
+      >
+        Learn more on PBS News Hour
+      </a>
+      <button class="learn">
+        Learn more adulting know-how 
+      </button>
+      <p class="footer">
+        This page was built by Cassie Harger
+        </a>
+      </p>
+    </div>
+    <script>
+      function subscribe() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favorite emoji?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! You are now subscribed to Adulting101! " +
+            emoji
+        );
+      }
+
+      let learnButton = document.querySelector(".learn");
+      learnButton.addEventListener("click", subscribe);
+
+    </script>
+  </body>
+</html>
